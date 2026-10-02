@@ -7,14 +7,8 @@ export default function Home() {
   return (
     <>
       <Top />
-      <br />
-      <hr />
       <Mid_first />
-      <br />
-      <hr />
       <Mid_second />
-      <br />
-      <hr />
       <Bottom />
     </>
   );
