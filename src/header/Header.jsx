@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { href, Link } from "react-router-dom";
 
 function Header() {
   const menu = [
-    { label: "Home", path: "/" },
-    { label: "Services", path: "/" },
-    { label: "About", path: "/" },
-    { label: "Projects", path: "/" },
-    { label: "Blog", path: "/" },
-    { label: "Book a call", path: "/" },
+    { label: "Home", href: "#top" },
+    { label: "Services", href: "#services" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    { label: "Blog", href: "#blog" },
+    { label: "Book a call", href: "#contact" },
   ];
 
   return (
@@ -16,13 +16,9 @@ function Header() {
 
       <nav className="flex gap-6">
         {menu.map((item) => (
-          <Link
-            key={item.label}
-            to={item.path}
-            className="hover:underline"
-          >
+          <a key={item.label} href={item.href} className="hover:underline">
             {item.label}
-          </Link>
+          </a>
         ))}
       </nav>
     </div>
