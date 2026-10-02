@@ -1,4 +1,4 @@
-import Bottom from "./Bottom_part/Bottom";
+import Bottom from "./Bottom_first/Bottom-first";
 import Mid_first from "./Middle_first/middle_first";
 import Mid_second from "./Middle_second/Middle_second";
 import Top from "./Top/Top";
