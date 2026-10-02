@@ -1,16 +1,84 @@
-# React + Vite
+# Сайт-портфолио
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Учебная заготовка адаптивного сайта-портфолио продуктового дизайнера. Проект создан на React и Vite: в нем настроены общая шапка и подвал, маршрутизация и компоненты для будущих секций главной страницы.
 
-Currently, two official plugins are available:
+> Я создаю продукты, которые радуют и вдохновляют людей.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+В качестве примера концепции сайт представляет Джейка, продуктового дизайнера из Берлина, который создает понятные цифровые продукты для стартапов. Тексты и секции портфолио можно адаптировать под реального автора.
 
-## React Compiler
+## Текущий статус
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Сейчас в проекте есть общая компоновка страницы, шапка с навигацией, подвал с контактными данными и заготовки секций главной страницы. Основные блоки контента пока содержат заглушки: реальные проекты, биографию и публикации блога еще предстоит добавить. Ссылки меню и подвала также пока не ведут на отдельные страницы.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19 и JavaScript
+- Vite 8
+- Tailwind CSS 4 с плагином для Vite
+- React Router DOM 7
+- Lucide React и React Icons
+- ESLint
+
+## Структура проекта
+
+```text
+src/
+├── assets/
+│   ├── AllPages/
+│   │   ├── Bottom_part/Bottom.jsx
+│   │   ├── Middle_first/middle_first.jsx
+│   │   ├── Middle_second/Middle_second.jsx
+│   │   ├── Top_part.jsx/Top.jsx
+│   │   └── Home.jsx
+│   ├── AppRputes.jsx
+│   ├── Layout.jsx
+│   └── Placeholder.jsx
+├── footer/Footer.jsx
+├── header/Header.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+`AppRputes.jsx` настраивает маршруты, `Layout.jsx` содержит общую шапку и подвал, а `Home.jsx` собирает секции главной страницы. Сейчас настроены главная страница (`/`) и страница-заглушка (`/placeholder`).
+
+## Запуск проекта
+
+Для работы нужен установленный Node.js и npm.
+
+```bash
+# Установить зависимости
+npm install
+
+# Запустить сервер разработки
+npm run dev
+```
+
+Vite выведет локальный адрес в терминал; по умолчанию это `http://localhost:5173`.
+
+## Проверка и сборка
+
+```bash
+# Проверить код с помощью ESLint
+npm run lint
+
+# Собрать production-версию
+npm run build
+
+# Запустить локальный просмотр production-сборки
+npm run preview
+```
+
+## Дальнейшее развитие
+
+- Заполнить главную страницу описанием автора и его специализации.
+- Добавить карточки проектов с изображениями и описанием задач.
+- Подготовить разделы об авторе и опыте работы.
+- Добавить список публикаций или страницу блога.
+- Заменить демонстрационные контакты и ссылки на актуальные.
+- Настроить адаптивность и проверить интерфейс на мобильных устройствах.
+
+## Автор и лицензия
+
+Учебный проект для практики React и создания портфолио. Указанные в интерфейсе автор, адрес и контактные данные являются демонстрационными и должны быть заменены перед публикацией.
