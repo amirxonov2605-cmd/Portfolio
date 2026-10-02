@@ -1,0 +1,60 @@
+.experience {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.heading {
+  margin: 0 0 50px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.date {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  padding-right: 40px;
+  align-self: flex-end;
+}
+
+.arrow {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+}
