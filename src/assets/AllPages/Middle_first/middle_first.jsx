@@ -2,7 +2,7 @@ import ProjectCarousel from "./ProjectCarousel"
 
 export default function Mid_first() {
     return (
-        <section id="projects" className="bg-linear-to-b from-white from-60% to-black to-60% pb-16">
+        <section id="projects" className="bg-linear-to-b scroll-mt-20 from-white from-60% to-black to-60% pb-16">
             <div className="max-w-6xl mx-auto px-6">
                 {/* Заголовок с кнопкой */}
                 <div className="flex justify-between items-start pt-16 mb-12">
